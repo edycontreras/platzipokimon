@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>POKIMON!🎮🎮</title>
+        <script defer src="./pokimon.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="seleccionarPokimon">
+            <H1 class="titulo">POKIMON🔥💧🍃</H1>
+
+            <H2 id="subtitulo">ELIGE TU POKIMON!!:</H2>
+
+            <div id="contenedorPokimones" class="tarjetas">
+
+            </div>
+
+            <button id="boton-mascota">SELECCIONAR</button>
+        </section>
+
+        <section id="verMapa">
+            <h2 class="subtitulo">Explora con tu Pokimon</h2>
+            <canvas id="mapa"></canvas>
+            <button class="botonesMove"  
+                onmousedown="moverPokimonArriba()" onmouseup="detenerMovimiento()" 
+                ontouchstart="moverPokimonArriba()" ontouchend="detenerMovimiento()">⬆
+            </button>
+            <div id="contenedorBotones">
+                <button class="botonesMove" 
+                    onmousedown="moverPokimonIzquierda()" onmouseup="detenerMovimiento()" 
+                    ontouchstart="moverPokimonIzquierda()" ontouchend="detenerMovimiento()">⬅
+                </button>
+                <button class="botonesMove" 
+                    onmousedown="moverPokimonAbajo()" onmouseup="detenerMovimiento()" 
+                    ontouchstart="moverPokimonAbajo()" ontouchend="detenerMovimiento()">⬇
+                </button>
+                <button class="botonesMove" 
+                    onmousedown="moverPokimonDerecha()" onmouseup="detenerMovimiento()" 
+                    ontouchstart="moverPokimonDerecha()" ontouchend="detenerMovimiento()">➡
+                </button>
+            </div>
+        </section>
+
+        <section id="seleccionarAtaque">
+            <H2 id="subtitulo">Elige Tu Ataque:</H2>
+
+            <div id="contenedorAtaques" class="botonResponsive">
+
+            </div>
+                <div id="mensajes">
+                    <p id="resultado">glhf</p>
+                    
+                    <section id="reiniciar">
+                        <button id="botonReiniciar">Reiniciar</button>
+                    </section>
+                </div>
+            
+            <div class="ataques">
+                <div id="boxJugador">
+                    <p id="vidapropia">0</p>
+                    <p id="mascotapropia">Mascota</p>
+                    <div id="ataquesDelJugador"></div>
+                </div>
+                <div id="boxRival">
+                    <p id="vidarival">0</p>
+                    <p id="mascotarival">Mascota</p>
+                    <div id="ataquesDelRival"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

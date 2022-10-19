@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+* {
+	padding: 0;
+	margin: 2px;
+    font-family: 'DynaPuff', cursive;
+}
+
+body{
+    background-color: #1C3879;
+    background-image: url(./assets/fondo.png);
+    background-size: cover;
+}
+
+.titulo{
+    width: 520px;
+    height: 100px;
+    font-size: 60px;
+    background: #277BC0;
+    color: #FFF4CF;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #FFB200;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#subtitulo{
+    color: beige;
+
+}
+#seleccionarPokimon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#seleccionarAtaque{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botonesDeAtaque{
+    background: #293462;
+    border-radius: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    color: whitesmoke;
+
+}
+
+#mensajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjetas, .botonResponsive {
+    display: flex;
+    gap: 10px;
+}
+.tarjetaDePokimon{
+    width: 170px;
+    height: 100px;
+    background: #293462;
+    color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #FEDB39;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetaDePokimon img{
+    width: 80px;
+}
+#boton-mascota{
+    width: 170px;
+    background: #554994;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #F675A8;
+    border-radius: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+input {
+    display: none; 
+}
+input:hover + label{
+    color: orange;
+}
+
+input:checked + label{
+    background-color: #8FE3CF;
+}
+#boton-fuego.active{
+    background-color: red;
+    color: red;
+}
+
+#mensajes{
+    width: 346px;
+    box-sizing: border-box;
+    background: #002B5B;
+    border-radius: 1em;
+    padding: 10px;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #2B4865;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+#botonReiniciar{
+    text-align: center;
+    border: transparent;
+    border-radius: 1em;
+    width: 80px;
+height: 25px;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 1em;
+    gap: 10px;
+}
+#boxJugador, #boxRival{
+    display: flex;
+    flex-direction: column;
+    background: #293462;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid #FEDB39;
+    border-radius: 1em;
+}
+
+#verMapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMapa button{
+    width: 80px;
+    height: 40px;
+    background: #554994;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid #F675A8;
+    border-radius: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 360px){
+    .tarjetas , .botonResponsive{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px){
+    #verMapa div {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
